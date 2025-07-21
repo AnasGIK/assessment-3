@@ -1,0 +1,206 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+build/
+dist/
+out/
+.next/
+*/build/
+*/dist/
+*/out/
+*/.next/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*/coverage/
+.nyc_output
+*.lcov
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example
+backend/.env
+frontend/.env
+*/.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Yarn v2 files
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+.tsbuildinfo
+next-env.d.ts
+*.d.ts
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/*
+
+# IDE - VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# MongoDB
+*.mongo
+mongo-data/
+data/
+
+# Redis dump file
+dump.rdb
+
+# Jest
+jest-coverage/
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Vercel
+.vercel
+
+# Testing
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# API documentation generated files
+docs/api/
+
+# Uploaded files (if any)
+uploads/
+public/uploads/
+
+# Swagger UI assets
+swagger-ui-dist/
+
+# PM2
+.pm2
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Certificates
+*.pem
+*.key
+*.crt
+
+# Local configuration
+config/local.json
+config/production.json
+
+# Backup files
+*.backup
+*.bak
+
+# Sentry Config File
+.sentryclirc
