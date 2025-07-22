@@ -1,4 +1,5 @@
 "use client";
+import { fetchAPI } from "@/lib/api";
 import { useState } from "react";
 
 export default function AddWalkinLogPage() {
@@ -15,7 +16,7 @@ export default function AddWalkinLogPage() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("/auth/analytics/walkins", {
+      const res = await fetchAPI("/auth/analytics/walkins", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

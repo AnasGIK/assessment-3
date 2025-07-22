@@ -63,9 +63,9 @@ const UserSchema = new Schema<IUser>({
   store: {
     type: Schema.Types.ObjectId,
     ref: "Store",
-    // required: function () {
-    //   return this.role === "store-manager";
-    // },
+    required: function () {
+      return this.role === "store-manager";
+    },
   },
   createdAt: {
     type: Date,

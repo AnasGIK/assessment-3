@@ -111,4 +111,29 @@ router.post(
   }
 );
 
+router.get("/analytics/walkins", authenticateToken, async (req, res) => {
+  try {
+    let logs;
+
+    if (req.user?.role === "admin") {
+      logs = await WalkInLog.find()
+        .populate({ path: "store", select: "name" })
+        .sort({ timestamp: -1 })
+        .limit(100);
+    } else if (req.user?.role === "store-manager") {
+      logs = await WalkInLog.find({ store: req.user.store })
+        .populate({ path: "store", select: "name" })
+        .sort({ timestamp: -1 })
+        .limit(100);
+    } else {
+      return res.status(403).json({ error: "Unauthorized" });
+    }
+
+    res.json({ walkInLogs: logs });
+  } catch (err) {
+    console.error("Error fetching walk-in logs:", err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 export default router;

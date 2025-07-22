@@ -18,6 +18,9 @@ const Home = () => {
       <Link href="/add-walkin-logs" className="btn btn-accent ml-2">
         Add Walk-in logs
       </Link>
+       <Link href="/walkin-logs" className="btn btn-accent ml-2">
+        Walk-in logs
+      </Link>
     </div>
   );
 };
